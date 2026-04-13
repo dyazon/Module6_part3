@@ -1,0 +1,71 @@
+[
+    {
+        "Id": "sha256:1d13701a5f9f3fb01aaa88cef2344d65b6b5bf6b7d9fa4cf0dca557a8d7702ba",
+        "RepoTags": [
+            "nginx:alpine"
+        ],
+        "RepoDigests": [
+            "nginx@sha256:1d13701a5f9f3fb01aaa88cef2344d65b6b5bf6b7d9fa4cf0dca557a8d7702ba"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-02-05T00:07:18.369897286Z",
+        "Config": {
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.29.5",
+                "PKG_RELEASE=1",
+                "DYNPKG_RELEASE=1",
+                "NJS_VERSION=0.9.5",
+                "NJS_RELEASE=1",
+                "ACME_VERSION=0.3.1"
+            ],
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "WorkingDir": "/",
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 25987617,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e",
+                "sha256:53998a5033c3c508a3912f390e036cf2d3761839a9f33a3116eb4610cff01f5a",
+                "sha256:660f9a93104fa1af3115dcecdc51a462e39ac850c8d23d7517fb324aceaa1b64",
+                "sha256:f35bcec50d8c988c543832ca1bfe8a008dbf52fbbb64e050a3617b5c8b17af40",
+                "sha256:aa0fc249df10e9949b4deb92b6611a7d25203282b7bfe69c4482a8a717f79510",
+                "sha256:6c0e59fd138a72dba956ed6d98dbca77200fd4d822ac65e8f1d04175e441d523",
+                "sha256:7b2903554e639cafe89adc85ab96a86c767c9a88dfa90de2dfbe48a7988aec26",
+                "sha256:da3ac26fdf0f7491d981691d9204d050a9d906fabfd5a6f73c0a14ed7304117f"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-03-04T23:54:30.297437518Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:1d13701a5f9f3fb01aaa88cef2344d65b6b5bf6b7d9fa4cf0dca557a8d7702ba",
+            "size": 10333
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/library/nginx"
+                }
+            ]
+        }
+    }
+]
